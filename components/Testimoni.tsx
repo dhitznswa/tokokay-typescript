@@ -74,20 +74,20 @@ const ReviewCard = ({
           src={img}
         />
         <div className="flex flex-col">
-          <figcaption className="text-sm font-medium dark:text-white">
+          <figcaption className="text-sm font-medium text-muted-foreground">
             {name}
           </figcaption>
-          <p className="text-xs font-medium dark:text-white/40">{username}</p>
+          <p className="text-xs font-medium text-foreground/40">{username}</p>
         </div>
       </div>
-      <blockquote className="mt-2 text-sm">{body}</blockquote>
+      <blockquote className="mt-2 text-xs">{body}</blockquote>
     </figure>
   );
 };
 
 export function Testimoni() {
   return (
-    <div className="relative flex min-h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg">
+    <div className="relative flex w-full flex-col items-center justify-center overflow-hidden rounded-lg">
       <Marquee pauseOnHover className="[--duration:20s]">
         {firstRow.map((review) => (
           <ReviewCard key={review.username} {...review} />
@@ -98,8 +98,8 @@ export function Testimoni() {
           <ReviewCard key={review.username} {...review} />
         ))}
       </Marquee>
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white dark:from-background"></div>
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white dark:from-background"></div>
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-1/5 bg-gradient-to-r from-white dark:from-background"></div>
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-1/5 bg-gradient-to-l from-white dark:from-background"></div>
     </div>
   );
 }

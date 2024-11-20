@@ -5,7 +5,9 @@ export default function layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="font-[family-name:var(--font-poppins)] text-sm">
       <NavbarFrontend />
-      <div className="containter mx-auto p-4 md:p-8 lg:p-16">{children}</div>
+      <div className="containter mx-auto py-16 px-4 md:px-8 lg:px-24">
+        {children}
+      </div>
     </div>
   );
 }

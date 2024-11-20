@@ -46,6 +46,11 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.57.1.tgz#de633db3ec2ef6a3c89e2f19038063e8a122e2c2"
   integrity sha512-d9zaMRSTIKDLhctzH12MtXvJKSSUhaHcjV+2Z+GK+EEY7XKpP5yR4x+N3TAcHTcu963nIr+TMcCb4DBCYX1z6Q==
 
+"@faker-js/faker@^9.2.0":
+  version "9.2.0"
+  resolved "https://registry.yarnpkg.com/@faker-js/faker/-/faker-9.2.0.tgz#269ee3a5d2442e88e10d984e106028422bcb9551"
+  integrity sha512-ulqQu4KMr1/sTFIYvqSdegHT8NIkt66tFAkugGnHA+1WAfEn6hMzNR+svjXGFRVLnapxvej67Z/LwchFrnLBUg==
+
 "@floating-ui/core@^1.6.0":
   version "1.6.8"
   resolved "https://registry.yarnpkg.com/@floating-ui/core/-/core-1.6.8.tgz#aa43561be075815879305965020f492cdb43da12"
@@ -1605,6 +1610,13 @@ foreground-child@^3.1.0:
   dependencies:
     cross-spawn "^7.0.0"
     signal-exit "^4.0.1"
+
+framer-motion@^11.11.11:
+  version "11.11.11"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-11.11.11.tgz#3c058c97ec134afdce77caa20396f0fd82d63b7d"
+  integrity sha512-tuDH23ptJAKUHGydJQII9PhABNJBpB+z0P1bmgKK9QFIssHGlfPd6kxMq00LSKwE27WFsb2z0ovY0bpUyMvfRw==
+  dependencies:
+    tslib "^2.4.0"
 
 fs.realpath@^1.0.0:
   version "1.0.0"
